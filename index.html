@@ -1,1 +1,31 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Exam Scanner - Auto Quality Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Exam Scanner</h1>
+        <div class="camera-wrapper">
+            <video id="cameraFeed" autoplay playsinline></video>
+            <canvas id="previewCanvas" style="display: none;"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="scanPage1Btn" class="btn primary">📸 Scan Page 1</button>
+            <button id="scanPage2Btn" class="btn secondary" disabled>📸 Scan Page 2</button>
+            <button id="submitBtn" class="btn success" disabled>✨ Send to Gemini AI</button>
+        </div>
+
+        <div id="status" class="status"></div>
+        <div id="qualityFeedback" class="quality-feedback"></div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
